@@ -6,15 +6,13 @@ int main () {
 
     float cofeePrice = 99.99; 
     int roundeOffCofeePrice = (int) cofeePrice; 
-
     int cofeeQuantity = 5;
 
     int roundedTotalPrice = cofeePrice * cofeeQuantity; 
-
     double totalPrice = cofeePrice * cofeeQuantity;
-
     float myTotalPrice = cofeePrice * cofeeQuantity;
 
+    cout << cofeePrice << endl;
     cout << roundeOffCofeePrice << endl; // 99
     cout << cofeeQuantity << endl; // 5
 
