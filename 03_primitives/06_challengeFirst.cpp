@@ -4,18 +4,28 @@ using namespace std;
 
 int main () {
 
-    string type_of_Tea = "LemonTee";
-    float pricePerKilogram = 49.99;
-    char rating = '3';
+    string type_of_Tea;
+    float basePrice;
+    char rating;
 
 
-    std::cout<< type_of_Tea <<std::endl;
-    std::cout<< pricePerKilogram << std::endl;
-    std::cout<< rating << std::endl;
+    cout << "Enter the type of tea";
+    getline(cin, type_of_Tea);
 
+    cout << "Enter the price per kilogram";
+    cin >> basePrice;
 
-    // escape sequence
-    std::cout << "escape sequence" << std::endl;
-    std::cout<< "type of tee is \t" << type_of_Tea << " & price per kilogram is \t" << pricePerKilogram << "\n & rating is \t"<< rating << std::endl;
-    return 0; 
+    cout << "Enter the rating of the tea (5, 4, 3, 2, 1)";
+    cin >> rating;
+
+    float newPrice = basePrice * 1.10f;
+
+    int roundPrice = static_cast <int> (newPrice);
+
+    cout << "\n --- Tea Information ---" << endl;
+    cout << "Type of Tea \t \t \t : "<< type_of_Tea<<endl;
+    cout << "Base price of \t \t \t : " << basePrice <<endl;
+    cout << "New Price (after 10 percent increase) \t \t \t $: "<< newPrice<<endl;
+    cout << "Rounded price is \t \t \t :" << roundPrice << endl;
+    cout << "Customer Rating is \t \t \t :" << rating << endl;
 }

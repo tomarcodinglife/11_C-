@@ -3,21 +3,19 @@
 using namespace std;
 
 int main () {
-    string userRequiredCofee; 
-    float cofeePrice;
-    int incrementPrice = 10;
-    int finalIncrementPrice = cofeePrice * incrementPrice / 100;
-    int finalCofeePrice = cofeePrice + finalIncrementPrice;
-    
+    string favoriteTea;
+    int teaRequiredCup;
 
-    cout<< "What you like in cofee"<<endl;
-    getline(cin, userRequiredCofee);
+    cout << "What is your favorite Tea please tell me";
+    getline(cin, favoriteTea);
 
-    cout<< "How much price of \t" << userRequiredCofee << "\t please tell me";
-    cin >> cofeePrice;
+    cout << "How many cup required";
+    cin >> teaRequiredCup;
 
-    cout << userRequiredCofee;
-    cout << finalCofeePrice << "Price" ;
+    cout << "----- Information -----"<<endl;
+    cout << "User Favorite Tea is \t \t \t : " << favoriteTea<<endl;
+    cout << "user required cup of tea is \t \t \t : " << teaRequiredCup << endl;
+
 
 
     return 0;
