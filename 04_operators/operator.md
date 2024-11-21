@@ -1,10 +1,12 @@
 ## 1. Arithmetic Operators
 '''
+
 + Addition(+)
 - Subtraction(-)
 * Multiplication(*)
 + Division(/)
 - (Modulus or remainder(%)
+
 
 '''
 
