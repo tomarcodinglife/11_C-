@@ -1,11 +1,11 @@
 ## 1. Arithmetic Operators
-'''Airthmetic Operator
+'''
++ Addition(+)
+- Subtraction(-)
+* Multiplication(*)
++ Division(/)
+- (Modulus or remainder(%)
 
-+ (Addition)
-- (Subtraction)
-* (Multiplication)
-/ (Division)
-% (Modulus or remainder)
 '''
 
 ## 2. Assignment Operators
