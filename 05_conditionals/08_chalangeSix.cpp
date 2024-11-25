@@ -30,7 +30,7 @@ int main() {
         price = 4.0;
         cout << "Hy You are select Oolong Tea so Oolong Tea price is " << price <<" doller" << endl;
     default:
-        cout << "Invalid Choice" << price << endl;
+        cout << "Invalid Choice"<< endl;
     }
 
     return 0;
