@@ -10,6 +10,7 @@ returnType  functionName(parameter){
 
 #include <iostream>
 #include <string>
+using namespace std;
 
 
 int checkTemperature(int temprature) {
@@ -17,11 +18,27 @@ int checkTemperature(int temprature) {
      return temprature;
 }
 
+// Only Function Declaration here
+void serveChai(int cups);
+
+void makeChai(){
+    cout << " Boiling Water with Milk and Tea boiling.....";
+}
+
 
 int main() {
 
     // checkTemperature(15);
     int temp = checkTemperature(15);
-    std::cout<<temp<<std::endl;
+    cout<<temp;
+
+    makeChai();
+
+    serveChai(3);
     return 0;
+}
+
+void serveChai(int cups){
+
+    cout << " Serving " << cups << " of chai ";
 }

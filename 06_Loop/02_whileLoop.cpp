@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+
 
 using namespace std;
 
@@ -9,7 +11,7 @@ int main(){
     cout << " Enter the number of tea cups to sell";
     cin>>teaCups;
 
-    while (teaCups > 0)
+    while (teaCups > 0) 
     {
         teaCups--;
         cout << "Serving the cup of tea \n" << teaCups << "remaining" << endl;
