@@ -4,10 +4,7 @@ using namespace std;
 
 int main() {
 
-    int numA;
-    int numB;
-    int numC;
-    int greaterNum;
+    int numA, numB, numC;
 
 
     cout << " Enter the Number A ";
