@@ -6,6 +6,7 @@ returnType  functionName(parameter){
 
 */
 // void means empty return
+// Function Overloading means - same function name declare in multpile times with different data type or argument
 
 #include <iostream>
 #include <string>
