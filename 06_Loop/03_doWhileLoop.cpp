@@ -8,7 +8,7 @@ int main(){
     string response;
 
     do{
-        cout << "Do wnat tea (yes or no)";
+        cout << "Do want tea (yes or no) ";
         getline(cin, response);
         
     } while (response != "no" && response != "No"); 
