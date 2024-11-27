@@ -62,8 +62,8 @@ Summary of C++ Data Types
 ---
 
 #### double Example 
-'''cpp
 
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -72,11 +72,10 @@ int main() {
     cout << "Value of num1: " << num1 << endl;
     return 0;
 }
-
 ```
 
 #### long double Example 
-```
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -85,7 +84,6 @@ int main() {
     cout << "Value of num2: " << num2 << endl;
     return 0;
 }
-
 ```
 
 
