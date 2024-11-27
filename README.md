@@ -1,7 +1,6 @@
 # CPP (C++)
 
 ## Data Type
----
 
 Summary of C++ Data Types
 
