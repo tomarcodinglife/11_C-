@@ -49,6 +49,23 @@ Summary of C++ Data Types
 |   Guarantee        |Not guaranteed to be 64-bit on all platforms. | Always guaranteed to be at least 64-bit. |
 |   When to use?         |Use when you need a larger range than int, but not as large as long long.  | Use when you need guaranteed 64-bit precision. |
 
+### Example long and long long
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    long num1 = 2147483647;          // maximum value for signed 32-bit long (on 32-bit systems)
+    long long num2 = 9223372036854775807;  // maximum value for signed 64-bit long long
+    
+    cout << "Value of num1 (long): " << num1 << endl;
+    cout << "Value of num2 (long long): " << num2 << endl;
+    
+    return 0;
+}
+```
+
 
 ### Key Differences Between double and long double
 
