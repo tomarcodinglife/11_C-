@@ -1,5 +1,22 @@
 # CPP (C++) Language 
 "Hello, my name is Sujit Tomar. I first learned C++ in 2021, and I'm still learning it today because I believe that continuous practice and staying updated with new knowledge are essential for growth."
+
+### CPP Boilerplate Code
+
+```cpp
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main(){
+    
+    return 0;
+}
+
+```
+
 ## Data Type
 
 Summary of C++ Data Types
