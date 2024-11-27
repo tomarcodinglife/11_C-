@@ -50,10 +50,9 @@ Summary of C++ Data Types
 + Decrement Operators :- " Prefix: --x, Postfix: x--"
 
 ## Conditionals Statement
+"In C++, a conditional statement is a way to make decisions in a program. It allows the program to execute different blocks of code based on whether a certain condition is true or false. These conditions are usually based on comparing values., such as checking if a number is greater than another number or if a certain condition is met.
 
-#### Syntax
-#### Example
-
+In simple terms, conditional statements help your program decide what to do next based on certain situations."
 ### if Statement
 
 #### Syntax
