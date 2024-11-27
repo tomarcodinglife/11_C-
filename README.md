@@ -40,6 +40,55 @@ Summary of C++ Data Types
 | Pointer       | Holds memory address of a variable           | Depends on system      | int* ptr = &num;                | 
 ---
 
+### Key Differences Between long and long long
+| Feature           | long                                         |  long double                                         |
+| ----------------- |:--------------------------------------------:| ----------------------------------------------------:|
+|   Size         |Typically 4 bytes (32-bit) or 8 bytes (64-bit) depending on the system.| Always at least 8 bytes (64-bit)    |
+|   Range         |Depends on the system (on 32-bit systems: -2^31 to 2^31-1, on 64-bit systems: -2^63 to 2^63-1). | Always from -2^63 to 2^63-1 for signed, 0 to 2^64-1 for unsigned.   |
+|   Purpose         | Used for larger integers than int, but may not be large enough on some systems. |  Used for integers requiring guaranteed 64-bit size. |
+|   Guarantee        |Not guaranteed to be 64-bit on all platforms. | Always guaranteed to be at least 64-bit. |
+|   When to use?         |Use when you need a larger range than int, but not as large as long long.  | Use when you need guaranteed 64-bit precision. |
+
+
+### Key Differences Between double and long double
+
+| Feature       | double                                       |  long double                                             |
+| ------------- |:--------------------------------------------:| --------------------------------------------------------:|
+|  Size         | Typically 8 bytes (64 bits)                  | Typically 8 bytes (MSVC) or 16 bytes (GCC)               |            
+|  Precision    | Around 15-16 decimal digits                  | Around 18-19 decimal digits or more                      |
+|  Range        | ~ ±1.7 × 10³⁰                                | Larger than double, depending on the system              |
+|  Use Case     |  General-purpose floating-point values       | Higher precision required (e.g., scientific calculations)|
+|  Memory       |  Less memory usage compared to long double   | Uses more memory (if 16 bytes)
+---
+
+#### double Example 
+'''cpp
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    double num1 = 3.141592653589793;
+    cout << "Value of num1: " << num1 << endl;
+    return 0;
+}
+
+```
+
+#### long double Example 
+```
+#include <iostream>
+using namespace std;
+
+int main() {
+    long double num2 = 3.14159265358979323846264338327950288419716939937510L;
+    cout << "Value of num2: " << num2 << endl;
+    return 0;
+}
+
+```
+
+
 ## Operator in CPP
 + Arithmetic Operators :- " +, -, *, /, % "
 - Assignment Operators :- " +=, -=, *=, /=, %= "
