@@ -1,9 +1,9 @@
 # CPP (C++)
 
 ## Data Type
-
 ---
-#Summary of C++ Data Types
+
+Summary of C++ Data Types
 
 | Data Type     | Description                   |  Size (Typical)        | Example             | 
 | ------------- |:-----------------------------:| ----------------------:| -------------------:|
