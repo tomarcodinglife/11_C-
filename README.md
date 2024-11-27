@@ -1,12 +1,12 @@
-# CPP (C++)
-
+# CPP (C++) Language 
+"Hello, my name is Sujit Tomar. I first learned C++ in 2021, and I'm still learning it today because I believe that continuous practice and staying updated with new knowledge are essential for growth."
 ## Data Type
 
 Summary of C++ Data Types
 
-| Data Type     | Description                   |  Size (Typical)        | Example             | 
-| ------------- |:-----------------------------:| ----------------------:| -------------------:|
-| int           | Integer value (whole numbers)                | 4 bytes                | int a = 10;                   |   
+| Data Type     | Description                                  |  Size (Typical)        | Example                         | 
+| ------------- |:--------------------------------------------:| ----------------------:| -------------------------------:|
+| int           | Integer value (whole numbers)                | 4 bytes                | int a = 10;                     |   
 | short         | Smaller integer                              | 2 bytes                | short b = 5;                    | 
 | long          | Larger integer                               | 4 or 8 bytes           | long c = 100000;                | 
 | long long     | Very large integer                           | 8 bytes                | long long d = 100000000000LL;   | 
