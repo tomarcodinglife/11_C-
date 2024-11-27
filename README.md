@@ -41,28 +41,9 @@ Summary of C++ Data Types
 ---
 
 ## Operator in CPP
-
-### Arithmetic Operators
-" +, -, *, /, % "
-
-### Assignment Operators
-" +=, -=, *=, /=, %= "
-
-### Relational Operators
-" > , >=, <, <= "
-
-### Logical Operators
-" >> && and || "
-
-### **Bitwise Operators
-" (Bitwise AND) &, (Bitwise OR) |, (Bitwise XOR) ^,  (Bitwise NOT) ~, (Left shift) <<, (Right shift) >>"
-
-### Increment and Decrement Operators
-
-  #### ++ (Increment operator)
-  
-" Prefix: ++x, Postfix: x++ "
-
-  #### -- (Decrement operator)
-
-"  Prefix: --x, Postfix: x--"
++ Arithmetic Operators :- " +, -, *, /, % "
+- Assignment Operators :- " +=, -=, *=, /=, %= "
++ Relational Operators :- " > , >=, <, <= "
+- Logical Operators :- " >> && and || "
++ **Bitwise Operators :- "(Bitwise AND) &, (Bitwise OR) |, (Bitwise XOR) ^,  (Bitwise NOT) ~, (Left shift) <<, (Right shift) >>"
+- Increment and Decrement Operators :- ++ (Increment) --> " Prefix: ++x, Postfix: x++ ", -- (Decrement) --> "  Prefix: --x, Postfix: x--"
