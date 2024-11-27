@@ -39,3 +39,30 @@ Summary of C++ Data Types
 | void          | No value or unknown type                     | -                      | void print() {}                 | 
 | Pointer       | Holds memory address of a variable           | Depends on system      | int* ptr = &num;                | 
 ---
+
+## Operator in CPP
+
+### Arithmetic Operators
+" +, -, *, /, % "
+
+### Assignment Operators
+" +=, -=, *=, /=, %= "
+
+### Relational Operators
+" > , >=, <, <= "
+
+### Logical Operators
+" >> && and || "
+
+### **Bitwise Operators
+" (Bitwise AND) &, (Bitwise OR) |, (Bitwise XOR) ^,  (Bitwise NOT) ~, (Left shift) <<, (Right shift) >>"
+
+### Increment and Decrement Operators
+
+  #### ++ (Increment operator)
+  
+" Prefix: ++x, Postfix: x++ "
+
+  #### -- (Decrement operator)
+
+"  Prefix: --x, Postfix: x--"
