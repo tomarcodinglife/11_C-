@@ -4,7 +4,7 @@
 
 ---
 #Summary of C++ Data Types
----
+
 | Data Type     | Description                   |  Size (Typical)        | Example             | 
 | ------------- |:-----------------------------:| ----------------------:| -------------------:|
 | int           | Integer value (whole numbers)                | 4 bytes                | int a = 10;                   |   
@@ -22,3 +22,4 @@
 | std::string   | Sequence of characters (C++ string class)    | Depends on size        | std::string m = "Hello";        | 
 | void          | No value or unknown type                     | -                      | void print() {}                 | 
 | Pointer       | Holds memory address of a variable           | Depends on system      | int* ptr = &num;                | 
+---
