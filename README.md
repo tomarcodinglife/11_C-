@@ -48,3 +48,50 @@ Summary of C++ Data Types
 + **Bitwise Operators :- "(AND) &, (OR) |, (XOR) ^,  (NOT) ~, (Left shift) <<, (Right shift) >>"
 - Increment Operators :- " Prefix: ++x, Postfix: x++ "
 + Decrement Operators :- " Prefix: --x, Postfix: x--"
+
+## Conditionals Statement
+
+#### Syntax
+#### Example
+
+### if Statement
+
+#### Syntax
+#### Example
+
+### if else Statement
+
+#### Syntax
+#### Example
+
+### else if Statement
+
+#### Syntax
+#### Example
+
+### Switch Statement
+
+#### Syntax
+#### Example
+
+### Tarnary Operator
+#### Syntax
+```cpp
+    condition ? value_if_true : value_if_false;
+```
+#### Example
+```cpp
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age = 20;
+    
+    string result = (age >= 18) ? "Adult" : "Minor";
+    cout << "You are an " << result << "." << endl;
+
+    return 0;
+}
+
+```
