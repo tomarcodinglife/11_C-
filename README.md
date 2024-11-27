@@ -45,5 +45,6 @@ Summary of C++ Data Types
 - Assignment Operators :- " +=, -=, *=, /=, %= "
 + Relational Operators :- " > , >=, <, <= "
 - Logical Operators :- " >> && and || "
-+ **Bitwise Operators :- "(Bitwise AND) &, (Bitwise OR) |, (Bitwise XOR) ^,  (Bitwise NOT) ~, (Left shift) <<, (Right shift) >>"
-- Increment and Decrement Operators :- ++ (Increment) --> " Prefix: ++x, Postfix: x++ ", -- (Decrement) --> "  Prefix: --x, Postfix: x--"
++ **Bitwise Operators :- "(AND) &, (OR) |, (XOR) ^,  (NOT) ~, (Left shift) <<, (Right shift) >>"
+- Increment Operators :- " Prefix: ++x, Postfix: x++ "
++ Decrement Operators :- " Prefix: --x, Postfix: x--"
