@@ -299,3 +299,142 @@ int main() {
 }
 
 ```
+
+## Loop in cpp 
+In C++, there are several types of loops that allow you to repeat a block of code multiple times based on certain conditions. The main types of loops are:
+
+### for loop
+The for loop is typically used when you know beforehand how many times you want to repeat a block of code.
+#### Syntax
+```cpp
+
+for (initialization; condition; increment/decrement) {
+    // Code to be executed
+}
+
+```
+#### Example
+```cpp
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 5; i++) {
+        cout << "i = " << i << endl;
+    }
+    return 0;
+}
+
+```
+
+#### Output
+```cpp
+i = 1
+i = 2
+i = 3
+i = 4
+i = 5
+
+```
+
+### while loop
+The while loop is used when you want to repeat a block of code an unknown number of times, as long as a condition is true. It checks the condition before executing the loop body.
+
+#### Syntax
+```cpp
+while (condition) {
+    // Code to be executed
+}
+
+```
+#### Example
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i = 1;
+    while (i <= 5) {
+        cout << "i = " << i << endl;
+        i++;
+    }
+    return 0;
+}
+```
+
+#### Output
+```cpp
+i = 1
+i = 2
+i = 3
+i = 4
+i = 5
+
+```
+
+### do-while loop
+The do-while loop is similar to the while loop, but it checks the condition after executing the loop body. This guarantees that the loop body is executed at least once.
+
+#### Syntax
+```cpp
+do {
+    // Code to be executed
+} while (condition);
+
+```
+
+#### Example
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i = 1;
+    do {
+        cout << "i = " << i << endl;
+        i++;
+    } while (i <= 5);
+    return 0;
+}
+
+```
+
+#### Output
+```cpp
+i = 1
+i = 2
+i = 3
+i = 4
+i = 5
+
+```
+
+### Range Base for loop with std::vector
+#### Example
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    vector<int> vec = {10, 20, 30, 40, 50};
+    for (int val : vec) {
+        cout << "Value: " << val << endl;
+    }
+    return 0;
+}
+
+```
+
+#### output
+```cpp
+
+Value: 10
+Value: 20
+Value: 30
+Value: 40
+Value: 50
+
+
+```
