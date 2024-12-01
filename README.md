@@ -120,22 +120,163 @@ In simple terms, conditional statements help your program decide what to do next
 ### if Statement
 
 #### Syntax
+```cpp
+if (condition) {
+    // code to be executed if condition is true
+}
+```
 #### Example
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x = 10;
+
+    if (x > 5) {
+        cout << "x is greater than 5" << endl;
+    }
+
+    return 0;
+}
+
+```
 
 ### if else Statement
 
 #### Syntax
+```cpp
+if (condition) {
+    // Block of code that executes if condition is true
+} else {
+    // Block of code that executes if condition is false
+}
+```
+
 #### Example
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x = 10;
+
+    if (x > 5) {
+        cout << "x is greater than 5" << endl;
+    } else {
+        cout << "x is 5 or less" << endl;
+    }
+
+    return 0;
+}
+
+```
 
 ### else if Statement
 
 #### Syntax
+```cpp
+if (condition1) {
+    // Code block executed if condition1 is true
+} else if (condition2) {
+    // Code block executed if condition2 is true
+} else if (condition3) {
+    // Code block executed if condition3 is true
+} else {
+    // Code block executed if none of the conditions are true
+}
+
+```
 #### Example
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x = 7;
+
+    if (x > 10) {
+        cout << "x is greater than 10" << endl;
+    } else if (x > 5) {
+        cout << "x is greater than 5 but less than or equal to 10" << endl;
+    } else if (x > 0) {
+        cout << "x is greater than 0 but less than or equal to 5" << endl;
+    } else {
+        cout << "x is less than or equal to 0" << endl;
+    }
+
+    return 0;
+}
+
+
+```
 
 ### Switch Statement
 
 #### Syntax
+```cpp
+switch (expression) {
+    case value1:
+        // Code block executed if expression == value1
+        break;
+
+    case value2:
+        // Code block executed if expression == value2
+        break;
+
+    case value3:
+        // Code block executed if expression == value3
+        break;
+
+    // Optionally, more cases...
+
+    default:
+        // Code block executed if no case matches the expression
+        break;
+}
+
+```
 #### Example
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int day = 3;
+
+    switch (day) {
+        case 1:
+            cout << "Monday" << endl;
+            break;
+        case 2:
+            cout << "Tuesday" << endl;
+            break;
+        case 3:
+            cout << "Wednesday" << endl;
+            break;
+        case 4:
+            cout << "Thursday" << endl;
+            break;
+        case 5:
+            cout << "Friday" << endl;
+            break;
+        case 6:
+            cout << "Saturday" << endl;
+            break;
+        case 7:
+            cout << "Sunday" << endl;
+            break;
+        default:
+            cout << "Invalid day" << endl;
+            break;
+    }
+
+    return 0;
+}
+
+
+```
 
 ### Tarnary Operator
 #### Syntax
