@@ -18,7 +18,7 @@ int main() {
 
     int item[5] = {10, 20, 30, 40, 50};
 
-    itemServed(item, 5);
+    itemServed(item, 6);
 
     return 0;
 }
