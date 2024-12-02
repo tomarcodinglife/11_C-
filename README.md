@@ -119,13 +119,13 @@ int main() {
 In simple terms, conditional statements help your program decide what to do next based on certain situations."
 ### if Statement
 
-#### Syntax
+#### syntax
 ```cpp
 if (condition) {
     // code to be executed if condition is true
 }
 ```
-#### Example
+#### example
 
 ```cpp
 #include <iostream>
@@ -145,7 +145,7 @@ int main() {
 
 ### if else Statement
 
-#### Syntax
+#### syntax
 ```cpp
 if (condition) {
     // Block of code that executes if condition is true
@@ -154,7 +154,7 @@ if (condition) {
 }
 ```
 
-#### Example
+#### example
 ```cpp
 #include <iostream>
 using namespace std;
@@ -175,7 +175,7 @@ int main() {
 
 ### else if Statement
 
-#### Syntax
+#### syntax
 ```cpp
 if (condition1) {
     // Code block executed if condition1 is true
@@ -188,7 +188,7 @@ if (condition1) {
 }
 
 ```
-#### Example
+#### example
 ```cpp
 #include <iostream>
 using namespace std;
@@ -214,7 +214,7 @@ int main() {
 
 ### Switch Statement
 
-#### Syntax
+#### syntax
 ```cpp
 switch (expression) {
     case value1:
@@ -237,7 +237,7 @@ switch (expression) {
 }
 
 ```
-#### Example
+#### example
 ```cpp
 #include <iostream>
 using namespace std;
@@ -279,11 +279,11 @@ int main() {
 ```
 
 ### Tarnary Operator
-#### Syntax
+#### syntax
 ```cpp
     condition ? value_if_true : value_if_false;
 ```
-#### Example
+#### example
 ```cpp
 
 #include <iostream>
@@ -305,7 +305,7 @@ In C++, there are several types of loops that allow you to repeat a block of cod
 
 ### for loop
 The for loop is typically used when you know beforehand how many times you want to repeat a block of code.
-#### Syntax
+#### syntax
 ```cpp
 
 for (initialization; condition; increment/decrement) {
@@ -313,7 +313,7 @@ for (initialization; condition; increment/decrement) {
 }
 
 ```
-#### Example
+#### example
 ```cpp
 
 #include <iostream>
@@ -328,7 +328,7 @@ int main() {
 
 ```
 
-#### Output
+#### output
 ```cpp
 i = 1
 i = 2
@@ -341,14 +341,14 @@ i = 5
 ### while loop
 The while loop is used when you want to repeat a block of code an unknown number of times, as long as a condition is true. It checks the condition before executing the loop body.
 
-#### Syntax
+#### syntax
 ```cpp
 while (condition) {
     // Code to be executed
 }
 
 ```
-#### Example
+#### example
 ```cpp
 #include <iostream>
 using namespace std;
@@ -363,7 +363,7 @@ int main() {
 }
 ```
 
-#### Output
+#### output
 ```cpp
 i = 1
 i = 2
@@ -376,7 +376,7 @@ i = 5
 ### do-while loop
 The do-while loop is similar to the while loop, but it checks the condition after executing the loop body. This guarantees that the loop body is executed at least once.
 
-#### Syntax
+#### syntax
 ```cpp
 do {
     // Code to be executed
@@ -384,7 +384,7 @@ do {
 
 ```
 
-#### Example
+#### example
 ```cpp
 #include <iostream>
 using namespace std;
@@ -400,7 +400,7 @@ int main() {
 
 ```
 
-#### Output
+#### output
 ```cpp
 i = 1
 i = 2
@@ -411,7 +411,7 @@ i = 5
 ```
 
 ### Range Base for loop with std::vector
-#### Example
+#### example
 ```cpp
 #include <iostream>
 #include <vector>
@@ -440,7 +440,7 @@ Value: 50
 ## Function in cpp
 In C++, a function is a block of code that performs a specific task. Functions help in breaking down the code into smaller, reusable pieces, improving modularity and readability.
 
-### Syntax
+### syntax
 ```cpp
 
 return_type function_name(parameter_list)
@@ -452,7 +452,7 @@ return_type function_name(parameter_list)
 
 ```
 
-### Example 
+### example 
 ```cpp
 #include <iostream>
 using namespace std;
@@ -470,7 +470,7 @@ int main() {
 
 ```
 
-### Output
+### output
 ```cpp
 
     The sum is: 8
@@ -495,7 +495,7 @@ int main() {
 
 ```
 
-##### Output 
+##### output 
 ``` cpp
  Square root of 16 is: 4
 
@@ -510,7 +510,7 @@ void functionName() {
 }
 
 ```
-##### Example
+##### example
 ``` cpp
 
 #include <iostream>
@@ -525,7 +525,7 @@ int main() {
 }
 
 ```
-##### Output
+##### output
 ``` cpp
 
 Hello, welcome to C++!
@@ -542,7 +542,7 @@ return_type functionName(parameter1, parameter2, ...) {
 }
 
 ```
-###### Example
+###### example
 ```cpp
 
 #include <iostream>
@@ -574,7 +574,7 @@ return_type functionName(parameters) {
 }
 
 ```
-###### Example
+###### example
 ```cpp
 #include <iostream>
 
@@ -604,7 +604,7 @@ return_type functionName(parameter1, parameter2 = default_value) {
 }
 
 ```
-###### Example
+###### example
 ```cpp
 #include <iostream>
 
@@ -665,7 +665,7 @@ return_type functionName(parameters) {
 }
 
 ```
-###### Example
+###### example
 ```cpp
 #include <iostream>
 
