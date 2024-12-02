@@ -477,6 +477,278 @@ int main() {
 
 ```
 ### Type of Function
+In C++, functions can be categorized into different types based on their return types, parameters, and other features. The major types of functions in C++ are:
+#### Standard Functions (or Built-in Functions)
+##### Example
+```cpp
+
+#include <iostream>
+#include <cmath>  // for math functions
+
+int main() {
+    double x = 16.0;
+    double result = sqrt(x);  // sqrt is a standard function to compute square root
+    std::cout << "Square root of " << x << " is: " << result << std::endl;
+    return 0;
+}
+
+
+```
+
+##### Output 
+``` cpp
+ Square root of 16 is: 4
+
+```
+#### User-defined Functions
+##### Function with No Arguments
+###### synax
+```cpp
+
+void functionName() {
+    // Code
+}
+
+```
+##### Example
+``` cpp
+
+#include <iostream>
+
+void greet() {
+    std::cout << "Hello, welcome to C++!" << std::endl;
+}
+
+int main() {
+    greet();  // Calling the function
+    return 0;
+}
+
+```
+##### Output
+``` cpp
+
+Hello, welcome to C++!
+
+
+```
+
+##### Function with Arguments
+###### syntax 
+```cpp
+
+return_type functionName(parameter1, parameter2, ...) {
+    // Code
+}
+
+```
+###### Example
+```cpp
+
+#include <iostream>
+
+int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int sum = add(5, 3);  // Calling the function with arguments
+    std::cout << "Sum: " << sum << std::endl;
+    return 0;
+}
+
+```
+###### output
+```cpp
+
+Sum: 8
+
+
+```
+##### Function with Return Value
+###### syntax 
+```cpp
+return_type functionName(parameters) {
+    // Code
+    return value;
+}
+
+```
+###### Example
+```cpp
+#include <iostream>
+
+float divide(float a, float b) {
+    return a / b;
+}
+
+int main() {
+    float result = divide(10.0, 2.0);  // Calling the function with arguments
+    std::cout << "Division Result: " << result << std::endl;
+    return 0;
+}
+
+```
+###### output
+```cpp
+
+Division Result: 5
+
+```
+
+##### Functions with default arguments
+###### syntax 
+```cpp
+return_type functionName(parameter1, parameter2 = default_value) {
+    // Code
+}
+
+```
+###### Example
+```cpp
+#include <iostream>
+
+int multiply(int a, int b = 2) {
+    return a * b;
+}
+
+int main() {
+    std::cout << multiply(4, 5) << std::endl;  // Uses both arguments
+    std::cout << multiply(4) << std::endl;     // Uses default value for b
+    return 0;
+}
+
+```
+###### output
+```cpp
+20
+8
+
+```
+### Inline Functions
+An inline function is a function where the compiler replaces the function call with the actual code of the function, thereby potentially improving performance by avoiding the overhead of function calls. Inline functions are typically small, and the keyword inline is used to define them.
+###### syntax 
+```cpp
+inline return_type functionName(parameters) {
+    // Code
+}
+
+```
+###### Example
+```cpp
+#include <iostream>
+
+inline int square(int x) {
+    return x * x;
+}
+
+int main() {
+    std::cout << "Square of 5: " << square(5) << std::endl;
+    return 0;
+}
+
+```
+###### output
+```cpp
+Square of 5: 25
+
+```
+### Recursive Functions
+A recursive function is a function that calls itself. Recursion is often used for problems that can be broken down into smaller subproblems, such as calculating factorials or Fibonacci numbers.
+###### syntax 
+```cpp
+return_type functionName(parameters) {
+    if (base_condition) {
+        return base_value;
+    }
+    return functionName(new_parameters);  // Recursive call
+}
+
+```
+###### Example
+```cpp
+#include <iostream>
+
+int factorial(int n) {
+    if (n == 0)  // Base condition
+        return 1;
+    else
+        return n * factorial(n - 1);  // Recursive call
+}
+
+int main() {
+    int num = 5;
+    std::cout << "Factorial of " << num << " is: " << factorial(num) << std::endl;
+    return 0;
+}
+
+```
+###### output
+```cpp
+Factorial of 5 is: 120
+
+```
+### Friend Functions
+A friend function is a function that is not a member of a class but has access to the class's private and protected members. This is useful when you need to perform operations that involve more than one class but need access to the private data.
+###### syntax 
+```cpp
+class MyClass {
+private:
+    int data;
+public:
+    MyClass(int val) : data(val) {}
+    friend void displayData(MyClass obj);  // Friend function declaration
+};
+
+void displayData(MyClass obj) {
+    std::cout << "Data: " << obj.data << std::endl;  // Accessing private member
+}
+
+int main() {
+    MyClass obj(10);
+    displayData(obj);  // Calling the friend function
+    return 0;
+}
+
+```
+
+###### output
+```cpp
+Data: 10
+
+```
+### Virtual Functions
+A virtual function is a function that is declared in the base class and overridden in the derived class. It allows you to use polymorphism, where the function that gets called depends on the type of the object, not the reference.
+###### syntax 
+```cpp
+class Base {
+public:
+    virtual void show() {
+        std::cout << "Base class show function" << std::endl;
+    }
+};
+
+class Derived : public Base {
+public:
+    void show() override {
+        std::cout << "Derived class show function" << std::endl;
+    }
+};
+
+int main() {
+    Base* ptr;
+    Derived obj;
+    ptr = &obj;
+    ptr->show();  // Will call Derived class's show()
+    return 0;
+}
+
+```
+###### output
+```cpp
+Derived class show function
+
+```
 
 
 
