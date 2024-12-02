@@ -5,17 +5,22 @@ using namespace std;
 
 int* myMethod(int cups){
     int* sell = new int[cups];
-
     for (int i=0; i<cups ;i++){
-        sell += i + 1;
+        sell[i] = (i + 1)*10;
         cout<<" today sell is "<< sell[i] << endl;
     }
+
     return sell;
 }   
 
 int main() {
 
-    int array[] = ;
+    int cups = 5;
+    int* teaSell = myMethod(cups);
 
+    for(int i=0; i<cups; i++){
+        cout << " sell of tea " << teaSell[i] <<endl;
+    }
+    
     return 0;
 }

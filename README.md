@@ -1,7 +1,7 @@
 # CPP (C++) Language 
 "Hello, my name is Sujit Tomar. I first learned C++ in 2021, and I'm still learning it today because I believe that continuous practice and staying updated with new knowledge are essential for growth."
 
-### CPP Boilerplate Code
+## CPP Boilerplate Code
 
 ```cpp
 
@@ -436,8 +436,48 @@ Value: 30
 Value: 40
 Value: 50
 
+```
+## Function in cpp
+In C++, a function is a block of code that performs a specific task. Functions help in breaking down the code into smaller, reusable pieces, improving modularity and readability.
+
+### Syntax
+```cpp
+
+return_type function_name(parameter_list)
+{
+    // function body
+    // perform operations
+    return value;  // optional, depending on the return_type
+}
 
 ```
+
+### Example 
+```cpp
+#include <iostream>
+using namespace std;
+
+// Function to add two integers and return the result
+int add(int a, int b) {
+    return a + b;  // return the sum of a and b
+}
+
+int main() {
+    int result = add(5, 3);  // calling the function with arguments 5 and 3
+    cout << "The sum is: " << result << endl;
+    return 0;
+}
+
+```
+
+### Output
+```cpp
+
+    The sum is: 8
+
+```
+### Type of Function
+
 
 
 ----------------------------------------------------------------------------
