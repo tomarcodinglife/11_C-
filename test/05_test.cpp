@@ -5,7 +5,7 @@
 using namespace std;
 
 
-
+// for loop only for array in cpp
 
 int main() {
 
