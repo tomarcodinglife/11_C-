@@ -1,45 +1,50 @@
 #include <iostream>
-#include <string>
 #include <vector>
-#include <list>
+#include <string>
 
 using namespace std;
 
-class StudentDetails {
-    public:
-        string firstName;
-        string lastName;
-        int rollNumber;
-        bool isPass;
-        float marksinPercent;
-        vector<int> marksInSubject;
+class Account_Opening_Form{
+    public:    
+        string customerFirstName;
+        string customerLastName;
+        string customerFatherName;
+        string customerMotherName;
+        string customerAddress;
+        string customerEmail;
+        int accountNumber;
+        int mobileNumber;
+        float accountBalance; 
+        string gender;
+        vector<float> previousFiveDaysBalance;
 
-        void displayStudentDetails(){
-            cout<< "---------------- Display Student Details ----------------------------- \n";
-            cout << "Student Name is " << firstName << " "<< lastName <<endl;
-            cout << firstName << " " << lastName << " Roll Number is "<< rollNumber <<endl;
-            cout<< firstName << " " << lastName << " pass status is " << isPass<<endl;
-            cout<< " marks subject wise is ";
-             for(int marks : marksInSubject){   
-                    cout << marks<< " ";
-             }
-            cout<< endl;
-            cout << " -----------------------------End Studnet Details ---------------------------------------------------------------- ";
+        //default constructor
+        Account_Opening_Form(){
+            
+            cout << "Constructor Account Opening Form "<< endl;
         }
 
+        void displayDetails(){
+                cout<< "Customer Name: " << customerFirstName << " " << customerLastName <<endl;
+                cout<< "Father's Name: "<< customerFatherName <<endl;
+                cout<< "Mother's Name: "<< customerMotherName <<endl;
+                cout<< "Address:  " << customerAddress <<endl;
+                cout<< "Email ID: "<< customerEmail <<endl;
+                cout <<"Account Number: " << accountNumber <<endl;
+                cout<< "Mobile Number: "<< mobileNumber<<endl;
+                cout<< " Current Balance " << accountBalance<< endl;
+                cout<< "Gender: "<< (gender= "F" || "f" || "Female" || "female" ? "Female" : "Male")<<endl;
+                cout << "Previous Five Days Balance is ";
+                    for(float balance : previousFiveDaysBalance){
+                        cout << balance << "";
+                    }
+                    cout<<endl;
+            }
 };
 
-
 int main(){
-    StudentDetails studentDetails;
+    Account_Opening_Form account_Opening_Form;
 
-    studentDetails.firstName = " Sujit ";
-    studentDetails.lastName = " Tomar ";
-    studentDetails.rollNumber = 188;
-    studentDetails.isPass = true;
-    studentDetails.marksinPercent = 86.2;
-    studentDetails.marksInSubject = {64, 86, 95, 55, 40, 80};
-    studentDetails.displayStudentDetails();
+
     return 0;
-
 }
