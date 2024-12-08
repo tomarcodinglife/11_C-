@@ -4,47 +4,41 @@
 
 using namespace std;
 
-class Account_Opening_Form{
-    public:    
-        string customerFirstName;
-        string customerLastName;
-        string customerFatherName;
-        string customerMotherName;
-        string customerAddress;
-        string customerEmail;
-        int accountNumber;
-        int mobileNumber;
-        float accountBalance; 
-        string gender;
-        vector<float> previousFiveDaysBalance;
+class Student{
+    public :
+        string fullName;
+        int rollNumber;
+        long long regNumber;
+        bool isPass;
+        vector<int> marksSubjectWise;
 
         //parameter constructor
-        Account_Opening_Form(){
-            
-            cout << "Constructor Account Opening Form "<< endl;
+        Student(string Name, int rollNum, long long regNum, bool isPass, vector<int> marks){
+            fullName = Name;
+            rollNumber = rollNum;
+            regNumber = regNum;
+            isPass = isPass;
+            marksSubjectWise = marks;
+            cout << "Parameter constructor Called"<<endl;
         }
 
-        void displayDetails(){
-                cout<< "Customer Name: " << customerFirstName << " " << customerLastName <<endl;
-                cout<< "Father's Name: "<< customerFatherName <<endl;
-                cout<< "Mother's Name: "<< customerMotherName <<endl;
-                cout<< "Address:  " << customerAddress <<endl;
-                cout<< "Email ID: "<< customerEmail <<endl;
-                cout<< "Account Number: " << accountNumber <<endl;
-                cout<< "Mobile Number: "<< mobileNumber<<endl;
-                cout<< " Current Balance " << accountBalance<< endl;
-                cout<< "Gender: "<< (gender= "F" || "f" || "Female" || "female" ? "Female" : "Male")<<endl;
-                cout<< "Previous Five Days Balance is ";
-                    for(float balance : previousFiveDaysBalance){
-                        cout << balance << "";
-                    }
-                    cout<<endl;
-            }
+        void showStudentDetails(){
+            cout << "Student Name : "<< fullName <<endl;
+            cout << "Roll Number : "<< rollNumber << endl;
+            cout << "Registration Number : " << regNumber << endl;
+            cout << "Pass Status : " << (isPass = true ? "Pass" : "Fail")<<endl;
+            cout << "Marks Subject Wise is : ";
+             for (int marks : marksSubjectWise) {
+                cout << marks << " "<<endl;
+             }
+            cout<<endl;
+        }
+
 };
 
+
 int main(){
-    Account_Opening_Form account_Opening_Form;
-
-
+    Student firstStudent("Sujit Tomar", 139, 15652525545, false, {85, 63, 75, 48,91});
+    firstStudent.showStudentDetails();
     return 0;
 }

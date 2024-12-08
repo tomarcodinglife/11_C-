@@ -13,14 +13,18 @@ class Account_Opening_Form{
         string customerAddress;
         string customerEmail;
         int accountNumber;
-        int mobileNumber;
+        long long mobileNumber;
         float accountBalance; 
         string gender;
         vector<float> previousFiveDaysBalance;
 
         //default constructor
         Account_Opening_Form(){
-            
+            customerFirstName = "First Name";
+            customerLastName = "Last Name";
+            accountNumber = 000000000000000;
+            mobileNumber = 9999999999;
+            accountBalance = 0.00;
             cout << "Constructor Account Opening Form "<< endl;
         }
 
@@ -32,7 +36,7 @@ class Account_Opening_Form{
                 cout<< "Email ID: "<< customerEmail <<endl;
                 cout <<"Account Number: " << accountNumber <<endl;
                 cout<< "Mobile Number: "<< mobileNumber<<endl;
-                cout<< " Current Balance " << accountBalance<< endl;
+                cout<< "Current Balance " << accountBalance<< endl;
                 cout<< "Gender: "<< (gender= "F" || "f" || "Female" || "female" ? "Female" : "Male")<<endl;
                 cout << "Previous Five Days Balance is ";
                     for(float balance : previousFiveDaysBalance){
@@ -44,6 +48,7 @@ class Account_Opening_Form{
 
 int main(){
     Account_Opening_Form account_Opening_Form;
+    account_Opening_Form.displayDetails();
 
 
     return 0;
