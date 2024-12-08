@@ -30,11 +30,11 @@ class Account_Opening_Form{
                 cout<< "Mother's Name: "<< customerMotherName <<endl;
                 cout<< "Address:  " << customerAddress <<endl;
                 cout<< "Email ID: "<< customerEmail <<endl;
-                cout <<"Account Number: " << accountNumber <<endl;
+                cout<< "Account Number: " << accountNumber <<endl;
                 cout<< "Mobile Number: "<< mobileNumber<<endl;
                 cout<< " Current Balance " << accountBalance<< endl;
                 cout<< "Gender: "<< (gender= "F" || "f" || "Female" || "female" ? "Female" : "Male")<<endl;
-                cout << "Previous Five Days Balance is ";
+                cout<< "Previous Five Days Balance is ";
                     for(float balance : previousFiveDaysBalance){
                         cout << balance << "";
                     }
