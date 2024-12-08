@@ -29,7 +29,7 @@ class Student{
             cout << "Pass Status : " << (isPass = true ? "Pass" : "Fail")<<endl;
             cout << "Marks Subject Wise is : ";
              for (int marks : marksSubjectWise) {
-                cout << marks << " "<<endl;
+                cout << marks<< " "<<endl;
              }
             cout<<endl;
         }
