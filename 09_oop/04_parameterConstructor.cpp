@@ -26,10 +26,10 @@ class Student{
             cout << "Student Name : "<< fullName <<endl;
             cout << "Roll Number : "<< rollNumber << endl;
             cout << "Registration Number : " << regNumber << endl;
-            cout << "Pass Status : " << (isPass = true ? "Pass" : "Fail")<<endl;
-            cout << "Marks Subject Wise is : ";
+            cout << "Pass Status : " << (isPass ? "Fail" : "Pass")<<endl;
+            cout << "Marks Subject Wise is : \n";
              for (int marks : marksSubjectWise) {
-                cout << marks <<endl;
+                cout << marks <<" "<<endl;
              }
             cout<<endl;
         }
@@ -38,7 +38,9 @@ class Student{
 
 
 int main(){
-    Student firstStudent("Sujit Tomar", 139, 15652525545, false, {85, 63, 75, 48,91});
+    Student firstStudent("Sujit Tomar", 139, 15652525545, false, {85, 63, 75, 48, 91});
+    Student secondStudent("Amit Kumar", 135, 15652526565, true, {98, 68, 45, 78, 79, 80, 68});
     firstStudent.showStudentDetails();
+    secondStudent.showStudentDetails();
     return 0;
 }
