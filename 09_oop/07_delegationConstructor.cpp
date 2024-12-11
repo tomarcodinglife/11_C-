@@ -15,7 +15,7 @@ class BookDetails{
         //delegation Constructor
         BookDetails(string name):BookDetails(name, 0, "Unknown", true, {"Reader1, Reader2, Reader3, Reader4"}){};
 
-        // constructor
+        // parameter constructor
         BookDetails(string bname, int bookPrice, string bookWriter, bool forSell, vector<string> bReaderName){
             cout<< "--------------------Main Constructor------------------"<<endl;
             bookName = bname;
