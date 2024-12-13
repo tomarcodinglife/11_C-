@@ -26,7 +26,7 @@ class Car{
             cout<<"Car Diffectef : "<< (carDefected ? "Yes" : "No") <<endl;
             cout<<"Car Price : "<< carPrice << endl;
         }
-        // Friend Function
+        // Friend Function or Free Function
         friend bool comparePrice(const Car &car1, const Car &car2);
 };
 
